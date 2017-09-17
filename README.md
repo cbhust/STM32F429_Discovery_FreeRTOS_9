@@ -9,7 +9,7 @@
 # sudo apt-get update
 # sudo apt-get upgrade
 # sudo apt-get install build-essential git 
-# sudo apt-get gcc-arm-none-eabi
+# sudo apt-get install gcc-arm-none-eabi
 # mkdir work
 # cd work
 # git clone https://github.com/cbhust/STM32F429_Discovery_FreeRTOS_9.git
