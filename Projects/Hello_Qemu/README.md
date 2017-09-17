@@ -1,3 +1,4 @@
+
 ## 1. QEMU安装
   本例程使用qemu-system-gnuarmeclipse，该qemu分支对stm32f4有更好的支持，主要面向Eclipse开发环境，本文档给出在Ubuntu 16.04命令行环境下单独使用的方式。
 
@@ -31,6 +32,7 @@
 
 > 参数含义参见： https://gnu-mcu-eclipse.github.io/qemu/options/
 如正常运行则会显示LED的状态变化。如图所示：
+
 ![](qemu.png)
 
  
