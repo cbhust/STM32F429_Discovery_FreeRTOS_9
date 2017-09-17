@@ -20,6 +20,8 @@
 
 - 在Hello_Qemu目录下运行make，生成hello_qemu.elf文件
 
+> 说明：qemu-system-gnuarmeclipse当前版本不支持STM32F4的浮点，对STM32F4F429_Discovery的支持也存在bug，所以例程中的硬件资源对应的是STM32F4_Discovery开发板，MCU为STM32F407VG。相应的，FreeRTOS使用的portable目录也由ARM_CM4F改为ARM_CM3。
+
 ## 3. QEMU仿真
 
 - 在Hello_Qemu目录下运行：
