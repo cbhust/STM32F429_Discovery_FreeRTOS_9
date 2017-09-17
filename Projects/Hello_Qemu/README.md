@@ -7,7 +7,7 @@
 - 在工作目录解压缩文件
 ```
 #cd ~/work
-#tar xvf ~/Downloads/gnuarmeclipse-qemu-debian64-2.7.0-201611282115-dev.tgz
+#tar xvf gnuarmeclipse-qemu-debian64-2.7.0-201611282115-dev.tgz
 #chmod -R -w ./qemu
 ```
 - 测试qemu能否正常运行
