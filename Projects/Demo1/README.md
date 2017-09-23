@@ -43,7 +43,24 @@ qemu-system-gnuarmeclipse --verbose --verbose --board STM32F429I-Discovery --mcu
  ```
  #sudo apt-get install gdb-arm-none-eabi
 ```
+在Demo1目录下运行qemu_gdb脚本文件，该文件中添加了--gdb tcp::1234 -S
+
+qemu启动后等待来自gdb的调试指令，打开另外一个终端窗口，运行
+```
+#arm-none-eabi-gdb
+```
+在gdb界面内运行：
+```
+(gdb)target remote localhost:1234
+(gdb)continue
+```
+可以看到qemu开始执行程序，GUI界面上可以看到程序执行效果。
 
  ## 5. Trace
+ 
+本例程启动了FreeRTOS的trace功能。
+- 用STM32 ST-LINK Utility把hello_rtos.hex烧写入STM32F429I Discovery开发板，程序运行时，用STM32 ST-LINK Utility读取0x20000000到0x20030000范围内的地址数据，并保存到一个二进制文件trace_data.bin中。
+- 到https://percepio.com/tz/freertostrace/ 下载并安装Tracealyzer for FreeRTOS软件。
+- 在Tracealyzer for FreeRTOS软件中打开trace_data.bin，可以看到详细的FreeRTOS的任务和事件信息。
  
  
